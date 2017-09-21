@@ -8,18 +8,20 @@ import {
 
 @Component ({ 
   selector: 'my-app', 
-  template: '<div>{{value1}}</div>', 
+  template: '<div>{{value3}}</div>', 
   providers: [appService] 
 }) 
 
 export class AppComponent { 
   value1: string = ""; 
   value2: string = ""; 
+  value3: string = ""; 
   constructor(private _appService: appService) { }  
 
   ngOnInit(): void { 
      this.value1 = this._appService.getApp(); 
      this.value2 = this.value1 +this._appService.getApp(); 
+     this.value3 = this.value1 + this.value2; 
   } 
 }
 
