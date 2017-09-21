@@ -14,10 +14,12 @@ import {
 
 export class AppComponent { 
   value: string = ""; 
+  value2: string = ""; 
   constructor(private _appService: appService) { }  
 
   ngOnInit(): void { 
      this.value = this._appService.getApp(); 
+     this.value2 = this.value +this._appService.getApp(); 
   } 
 }
 
