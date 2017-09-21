@@ -8,7 +8,7 @@ import {
 
 @Component ({ 
   selector: 'my-app', 
-  template: '<div>{{value2}}</div>', 
+  template: '<div>{{value1}}</div>', 
   providers: [appService] 
 }) 
 
