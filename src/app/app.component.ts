@@ -19,7 +19,7 @@ export class AppComponent {
 
   ngOnInit(): void { 
      this.value1 = this._appService.getApp(); 
-     this.value2 = this.value +this._appService.getApp(); 
+     this.value2 = this.value1 +this._appService.getApp(); 
   } 
 }
 
