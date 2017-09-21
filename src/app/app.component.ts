@@ -8,17 +8,17 @@ import {
 
 @Component ({ 
   selector: 'my-app', 
-  template: '<div>{{value}}</div>', 
+  template: '<div>{{value1}}</div>', 
   providers: [appService] 
 }) 
 
 export class AppComponent { 
-  value: string = ""; 
+  value1: string = ""; 
   value2: string = ""; 
   constructor(private _appService: appService) { }  
 
   ngOnInit(): void { 
-     this.value = this._appService.getApp(); 
+     this.value1 = this._appService.getApp(); 
      this.value2 = this.value +this._appService.getApp(); 
   } 
 }
