@@ -16,6 +16,7 @@ export class AppComponent {
   value1: string = ""; 
   value2: string = ""; 
   value3: string = ""; 
+  value5: string = ""; 
   constructor(private _appService: appService) { }  
 
   ngOnInit(): void { 
